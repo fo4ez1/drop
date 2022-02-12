@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #word {
+        width: 400px;
+        height: 300px;
+        background-color: tan;
+      }
+      .card {
+        padding: 10px;
+        margin: 5px;
+        background-color: tan;
+        display: inline-block;
+      }
+          #speak {
+        display: none;
+      }
+
+      
+
+      #check {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="word" ondragover="allowDrop(event)" ondrop="drop(event)"></div>
+    <!-- <img
+      id="drag1"
+      src="http://js.web-online.net.ua/wp-content/uploads/2017/11/wizard.png"
+      draggable="true"
+      ondragstart="drag(event)"
+    /> -->
+    <p id="msg"></p>
+    <div id="drag1" draggable="true" ondragstart="drag(event)" class="card">
+      cat
+    </div>
+    <div id="drag2" draggable="true" ondragstart="drag(event)" class="card">
+      and
+    </div>
+    <div id="drag3" draggable="true" ondragstart="drag(event)" class="card">
+      dog
+    </div>
+    <button id="speak">Speak</button>
+    <button id="check">Check</button>
+    <script src="drag-and-drop.js"></script>
+    <script src="voice2 (1).html"></script>
+  </body>
+</html>
